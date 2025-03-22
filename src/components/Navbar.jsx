@@ -65,11 +65,11 @@ const Navbar = () => {
                           {item.subItems.map((subItem) => (
                             <div
                               key={subItem.name}
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground cursor-pointer"
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-gradient-to-r hover:from-purple-400/20 hover:to-pink-600/20 cursor-pointer"
                               onClick={() => scrollToSection(item.id)}
                             >
-                              <div className="text-sm font-bold leading-none">{subItem.name}</div>
-                              <p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-2">
+                              <div className="text-sm font-bold leading-none bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">{subItem.name}</div>
+                              <p className="line-clamp-2 text-sm leading-snug text-gray-400 mt-2">
                                 {subItem.description}
                               </p>
                             </div>
